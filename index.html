@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custome css -->
+     <link rel="stylesheet" href="assets/css/style.css">
+    <title>Dahboard</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark custome-nav-css">
+        <div class="container d-flex justify-content-between align-items-center">
+                <a class="navbar-brand d-block" href="#">VIRTUAL<span>REEL</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="page-link-sec d-none d-lg-block">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex align-items-center">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">My Players</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Integration</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#">Help</a>
+                    </li>
+                    <button class="navbtn"><div><i class="fa-solid fa-bell"></i></div> <div class="notification-number">10 <span><i class="fa-solid fa-caret-down"></i></span></div> </button>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <div class="userprofile"><i class="fa-solid fa-user"></i></div>
+                        <div class="mx-1 d-flex align-items-center flex-column username">
+                            <h5>WELCOME</h5>
+                            <h3>User001</h3>
+                        </div>
+                        <i class="fa-solid fa-caret-down text-light ms-1"></i>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title navbar-brand" id="offcanvasNavbarLabel">VIRTUAL<span>REEL</span></h5>
+            <div class="d-flex">
+                <button class="navbtn  "><div><i class="fa-solid fa-bell"></i></div> <div class="notification-number">10 <span><i class="fa-solid fa-caret-down"></i></span></div> </button>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item mx-3">
+                    <a class="nav-link" aria-current="page" href="#">Dashboard</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">My Players</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Integration</a>
+                </li>
+                <li class="nav-item mx-3">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+                    <div class="d-flex align-items-center justify-content-between my-2">
+                        <div class="userprofile"><i class="fa-solid fa-user"></i></div>
+                        <div class="mx-1 d-flex align-items-center flex-column username">
+                            <h5>WELCOME</h5>
+                            <h3>User001</h3>
+                        </div>
+                        <i class="fa-solid fa-caret-down text-light ms-1"></i>
+                    </div>
+            </ul>
+        </div>
+    </div>
+
+    <header id="header" >
+        <div class="container">
+            <div class="row align-items-center justify-content-center mt-5 pt-5 mx-5 resp">
+                <div class="col-md-6 col-12 header-info mt-4">
+                    <h5>WELCOME TO</h5>
+                    <h1>Virtual<span>Reel</span></h1>
+                    <p>Effortlessly create 3D Metaversa video in a few clicks. Turn Your Regular videos , text or artical into full-blown videos in any niche </p>
+                    <button class="primary-button"><i class="fa-solid fa-play me-1"></i> Watch Demo Video</button>
+                </div>
+                <div class="col-md-6 col-12">
+                    <div class="header-more-info d-flex">
+                        <p><span><i class="fa-regular fa-circle"></i></span> Lorem, ipsum.</p>
+                        <div class="next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                    <div class="header-more-info d-flex">
+                        <p><span><i class="fa-regular fa-circle"></i></span> Lorem, ipsum.</p>
+                        <div class="next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                    <div class="header-more-info d-flex">
+                        <p><span><i class="fa-regular fa-circle"></i></span> Lorem, ipsum.</p>
+                        <div class="next-btn"><i class="fa-solid fa-chevron-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>  
+
+    <section id="project">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center my-4">
+                <h3 class="text-light">Streaming Projects</h3>
+                <button class="primary-button">View all Project<i class="fa-solid fa-chevron-right ms-2"></i> </button>
+            </div>
+            <div class="row d-flex justify-content-between">
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="project-box">
+                        <img src="assets/image/project1.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <span><i class="fa-solid fa-play me-1"></i></span>
+                            <p>About Water</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="project-box">
+                        <img src="assets/image/project2.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <span><i class="fa-solid fa-play me-1"></i></span>
+                            <p>About Nature</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="project-box">
+                        <img src="assets/image/project3.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <span><i class="fa-solid fa-play me-1"></i></span>
+                            <p>Life in the city</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-12">
+                    <div class="project-box">
+                        <img src="assets/image/project4.png" class="img-fluid" alt="">
+                        <div class="d-flex align-items-center mt-3">
+                            <span><i class="fa-solid fa-play me-1"></i></span>
+                            <p>Children</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-sec-1">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 first-sec-info">
+                    <h5>INSTANTLY CREATE INTERACTIVE 3D VIDEOS</h5>
+                    <h4>Convrt regular videos into Metaverse videos</h4>
+                    <p>Turn boring old faishoned video into interactive 3D Metaverse video instantly No special cameras or technical known has needed</p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center ">
+                    <div class="info-img1">
+                        <img src="assets/image/computer.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-sec-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center order-md-0 order-1">
+                    <div class="info-img">
+                        <img src="assets/image/laptop.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 second-sec-info order-md-1 order-0">
+                    <h5>NEVER RUN OUT OF FRESH 360 CONTENT</h5>
+                    <h4>Turn any text into 100s of Metaverse videos using A.I.</h4>
+                    <p>Create a collection of ready-to-use, high-converting 360 videos for your ads or content simply by copy-pasting any text or article.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-sec-3">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-lg-6 first-sec-info">
+                    <h5>EFFORTLESSLY GET YOUR BRAND REMEMBERED</h5>
+                    <h4>Fully Customize your video in a few clicks</h4>
+                    <p>Create fully-brandable and social media-optimized 360 videos displaying your logos, brand colors, 3D avatars, and more.                    </p>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center">
+                    <div class="info-img1">
+                        <img src="assets/image/computer.png" class="img-fluid w-100" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="info-sec-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 d-flex justify-content-center order-md-0 order-1">
+                    <div class="info-img">
+                        <img src="assets/image/laptop.png" class="img-fluid w-100" alt="laptop">
+                    </div>
+                </div>
+                <div class="col-lg-6 second-sec-info order-md-1 order-0">
+                    <h5>MAKE 3D VIDEOS YOUR AUDIENCE WILL LOVE</h5>
+                    <h4>Get unlimited access to a Metaverse-ready media library</h4>
+                    <p>Choose from 1000s of images, videos, audio, music, 3D characters, and more that you can add to your and your clients' 360 videos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="last-section">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-6 lession">
+                    <h5>VISUALREEL LESSON #1</h5>
+                    <h4><span>Join Us</span> for our LIVE Webinar. </h4>
+                    <p>Join us for a private training that will walk you through how to use VisualReel to help you create and sell videos for maximum engagement, views and profits. This training or upgrade will not be made available afterwards. Sign up and make sure to show up on this live training with all your questions. </p>
+                    <button class="primary-button"><i class="fa-solid fa-play me-1"></i> Watch Demo Video</button>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center ">
+                    <div class="lession-img">
+                        <img src="assets/image/lession.jpg" class=" w-100" alt="lesion">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center footer-main">
+                <div class="d-flex links">
+                    <a href="#">TERMS</a>
+                    <a href="#">PRIVACY</a>
+                    <a href="#">SUPPORT</a>
+                </div>
+                <p>© 2021, Developed and maintained by Vega6 </p>
+                <div>
+                    <img src="assets/image/footerlogo.png" alt="logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

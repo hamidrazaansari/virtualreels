@@ -1,0 +1,611 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    background: rgb(71,95,161);
+    background: linear-gradient(0deg, rgba(71,95,161,1) 0%, rgba(0,0,0,1) 100%);
+    overflow-x: hidden;
+    height: 100%;
+    background-repeat: no-repeat;
+}
+
+.custome-nav-css {
+    height: 70px;
+    background-color: #005c79;
+    position: relative;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    z-index: 2;
+}
+.navbar-toggler , .navbar-brand , .page-link-sec{
+    position: relative;
+    z-index: 4;
+}
+
+.custome-nav-css::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/navbar-background.png') no-repeat center ;
+    background-size: cover;
+    opacity: 0.2;
+    z-index: 1;
+}
+.navbar-brand{
+    font-size: 20px;
+    font-weight: bold;
+    -webkit-text-stroke: 1px rgb(188, 188, 188);
+    color: #ce5de0 !important;
+
+}
+.navbar-brand span{
+    color: #fff;
+    -webkit-text-stroke: 0 !important;
+}
+.nav-link{
+    color: #fff !important;
+    font-weight: 500;
+
+}
+.navbtn{
+    background: rgb(5, 87, 71);
+    background: linear-gradient(90deg, #00b993 0%, #0095c1 100%);
+    border: none;
+    border-radius: 21px;
+    color: #fff;
+    font-size: 17px;
+    padding: 2px 17px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.offcanvas{
+    background-color: #005d80;
+}
+.notification-number{
+    margin-left: 10px;
+}
+.notification-number span{
+    font-size: 10px;
+    position: relative;
+    bottom: 2px;
+}
+.userprofile {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 1px 10px 4px;
+    margin: 0 10px;
+    margin-right: 0px;
+    color: #0095c1;
+    font-size: 20px;
+    line-height: 32px;
+}
+.username h5 {
+    font-size: 13px;
+    line-height: 10px;
+    color: #06b1bb;
+}
+.username h3 {
+    font-size: 17px;
+    line-height: 4px;
+    color: #fff;
+}
+/* header style */
+#header{
+    background: rgb(159,1,134);
+    background: linear-gradient(90deg, rgba(159,1,134,1) 0%, rgba(7,75,149,1) 100%);    position: relative;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    z-index: 2;
+    height: calc(90vh - 70px);
+}
+
+#header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/header-background.png') no-repeat center ;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+#header::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 30px;
+    width: 60%;
+    clip-path: polygon(3% 0, 97% 0, 100% 100%, 0 100%);
+    background-color: #101624;
+    z-index: 4;
+}
+
+.header-info{
+    position: relative;
+    z-index: 4;
+}
+
+.header-info h5{
+    font-size: 45px;
+    font-weight: 300;
+    line-height: 41px;
+    color: #fff;
+    letter-spacing: 2px;
+
+}
+.header-info h1 {
+    font-size: 79px;
+    line-height: 65px;
+    font-weight: 800;
+    color: #ffff;
+    letter-spacing: 5px;
+}
+.header-info h1 span{
+    font-weight: 600;
+
+}
+.header-info p{
+    color: #fff;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.primary-button{
+    padding: 9px 25px;
+    border-radius: 23px;
+    border: 1px solid #fff;
+    background: rgb(159, 1, 134);
+    background: linear-gradient(90deg, #a300dd 0%, #7100fc 100%);
+    position: relative;
+    z-index: 4;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+.primary-button:hover{
+    transform: scale(1.1);
+}
+.header-more-info{
+    margin: 14px 100px;
+    background: #9c53f3;
+    height: 77px;
+    padding: 5px;
+    color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 40px;
+    position: relative;
+    z-index: 4;
+    transition: all .4s ease-in-out;
+
+}
+.header-more-info:hover{
+    transform: scale(1.04);
+}
+.header-more-info p {
+    background-color: #071438;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+.header-more-info p span{
+    display: block;
+    height: 48px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 10px;
+    color: orangered;
+    text-align: center;
+    font-size: 34px;
+    line-height: normal;
+}
+.next-btn{
+    background: #fff;
+    height: 40px;
+    width: 40px;
+    margin: auto;
+    color: #000;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%
+}
+.project-box {
+    background-color: #0077ff;
+    height: 230px;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+
+}
+.project-box:hover{
+    transform: scale(1.04);
+}
+.project-box img{
+    height: 75%;
+    width: 100%;
+    border-radius: 10px;
+    background-size: fill;
+}
+.project-box span {
+    background: #3332327d;
+    padding: 4px 5px 5px;
+    text-align: center;
+    padding-left: 11px;
+    margin: 2px 7px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 13px;
+}
+.project-box p {
+    color: #fff;
+    background: #3332327d;
+    padding: 2px 10px 5px;
+    border-radius: 10px;
+    margin-bottom: 0 !important;
+    width: 80%;
+    text-align: center;
+    font-size: 17px;
+}
+.first-sec-info{
+    padding: 40px;
+    padding-left: 103px;
+    padding-bottom: 0px !important;
+}
+.first-sec-info h5{
+    color: #8990a2;
+    margin-top: 48px;
+
+}
+.first-sec-info h4 , .second-sec-info h4{
+    font-size: 30px;
+    font-weight: 700;
+    color: #00ffff;
+    line-height: 34px;
+}
+.first-sec-info p , .second-sec-info p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 20px;
+    margin-top: 29px;
+}
+.second-sec-info{
+    padding-right: 100px;
+}
+.second-sec-info h5 {
+    color: #8990a2;
+    margin-top: 48px;
+}
+.info-img{
+    position: relative;
+    display: block;
+    width: 550px;
+    height: 350px;
+}
+.info-img::before {
+    content: '';
+    position: absolute;
+    top: 17px;
+    left: 62px;
+    height: 267px;
+    width: 425px;
+    background: #005d80;
+    z-index: 2;
+}
+.info-img1{
+    position: relative;
+    width: 500px;
+    height: 420px;
+}
+.info-img1::before {
+    content: '';
+    position: absolute;
+    top: 13px;
+    left: 14px;
+    height: 252px;
+    width: 94%;
+    background: #005d80;
+    z-index: 2;
+}
+#last-section{
+    margin-top: 25px;
+    background: rgb(159,1,134);
+    background: linear-gradient(90deg, rgba(159,1,134,1) 0%, rgba(7,75,149,1) 100%);    position: relative;
+    overflow: hidden; /* Ensure the pseudo-element doesn't overflow */
+    z-index: 2;
+    padding: 30px;
+}
+
+#last-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../image/footer-bg.png') no-repeat center ;
+    background-size: cover;
+    opacity: 0.3;
+    z-index: 1;
+}
+#last-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 20%;
+    height: 30px;
+    width: 60%;
+    clip-path: polygon(0 0, 100% 0, 97% 100%, 3% 100%);
+    background-color: #3C5088;
+}
+.lession{
+    position: relative;
+    z-index: 4;
+    padding: 30px 60px;
+}
+.lession h5{
+    color: #ffffff;
+    margin-top: 34px;
+    font-size: 15px;
+}
+.lession h4{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 39px;
+}
+.lession h4 span{
+    color: #00ffff;
+}
+.lession p{
+    font-weight: 400;
+    line-height: 17px;
+    text-align: justify;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+.lession-img{
+    position: relative;
+    width: 500px;
+    height: 285px;
+    margin-top: 20px;
+
+}
+.lession-img::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -18px;
+    height: 316px;
+    width: 532px;
+    background: rgb(198, 29, 223);
+    background: linear-gradient(90deg, rgba(198, 29, 223, 1) 0%, rgba(56, 191, 220, 1) 100%);
+    z-index: 3;
+    border-radius: 10px;
+}
+.lession-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 4;
+    border-radius: 10px;
+}
+#footer{
+    background-color: #00113e;
+    color: #fff;
+    padding: 10px;
+}
+#footer p{
+    margin-bottom: 0 !important;
+}
+#footer img{
+    width: 80%;
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* responsive design */
+@media (max-width:1200px) {
+    .header-more-info{
+        margin: 14px 77px;
+        margin-right:0;
+    }
+    .project-box p {
+        padding: 2px 8px 5px;
+        font-size: 11px;
+    }
+    .info-img1::before {
+        height: 227px;
+
+    }
+    .info-img::before {
+        top: 17px;
+        left: 53px;
+        height: 218px;
+        width: 351px;
+    }
+    .first-sec-info h5 , .second-sec-info h5 {
+        color: #8990a2;
+        margin-top: 15px;
+        font-size: 15px;
+    }
+    .first-sec-info h4, .second-sec-info h4 {
+        font-size: 26px;
+        line-height: 29px;
+    }
+    .first-sec-info p, .second-sec-info p {
+        color: #fff;
+        font-weight: 500;
+        line-height: 20px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+@media (max-width:992px) {
+    .resp{
+        margin:29px 0 !important;
+    }
+    .header-info h1 {
+        font-size: 60px;
+    }
+    .header-info h5 {
+        font-size: 40px;
+        line-height: 28px;
+    }
+    .header-info p {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .primary-button {
+        padding: 7px 25px;
+        font-size: 12px;
+    }
+    .header-more-info p{
+        font-size: 13px;
+    }
+    .header-more-info p span {
+        height: 37px;
+        width: 39px;
+        font-size: 27px;
+        line-height: normal;
+    }
+}
+@media (max-width:768px) {
+    #header {
+        height: calc(90vh - 70px);
+    }
+    .resp{
+        margin: 0 !important;
+        padding-top: 20px !important;
+    }
+    .info-img1::before {
+        height: 250px;
+    }
+    .info-img::before {
+        top: 17px;
+        left: 60px;
+        height: 250px;
+        width: 397px;
+    }
+    .first-sec-info, .second-sec-info {
+        padding: 0px 36px;
+        padding-bottom: 15px !important;
+    }
+    .header-more-info {
+        margin: 14px 0px;
+    }
+    .links a {
+        font-size: 13px;
+    }
+    #footer p {
+        font-size: 12px;
+        margin: 0 10px;
+        text-align: center;
+    }
+    #footer img {
+        width: 72%;
+        float: right;
+    }
+    .navbtn {
+        font-size: 13px;
+        padding: 0px 10px;
+        height: 32px;
+        margin-top: 0px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width:580px) {
+    .header-info h5 {
+        font-size: 25px;
+        line-height: 20px;
+    }
+    .header-info h1 {
+        font-size: 45px;
+        line-height: 43px;
+    }
+    .primary-button {
+        padding: 7px 17px;
+        font-size: 10px;
+        font-weight: 600;
+    }
+    #project h3{
+        font-size: 17px;
+    }
+    .first-sec-info h5, .second-sec-info h5 {
+        color: #8990a2;
+        margin-top: 0px;
+        font-size: 13px;
+    }
+    .info-img1 {
+        position: relative;
+        width: 279px;
+        height: 272px;
+    }
+    .info-img1::before {
+        height: 139px;
+        top: 7px;
+        left: 9px;   
+    }
+    .info-img {
+        position: relative;
+        display: block;
+        width: 300px;
+        height: 190px;
+    }
+    .info-img::before {
+        top: 11px;
+        left: 36px;
+        height: 143px;
+        width: 229px;
+    }
+    #last-section::before , #header::before {
+        left: 10%;
+        height: 22px;
+        width: 80%;
+
+    }
+    .lession {
+        padding: 0px 5px;
+        padding-bottom: 10px;
+    }
+    #last-section {
+        margin-top: 12px;
+        background: rgb(159, 1, 134);
+        background: linear-gradient(90deg, rgba(159, 1, 134, 1) 0%, rgba(7, 75, 149, 1) 100%);
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+        padding: 0 30px;
+    }
+    .footer-main{
+        flex-direction: column;
+    }
+    .links a {
+        margin: 10px 5px;
+    }
+    #footer img {
+        width: 70%;
+        margin: 0 15%;
+        float: none;
+    }
+}
